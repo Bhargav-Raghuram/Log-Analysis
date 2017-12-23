@@ -7,7 +7,7 @@ Final project of the UDACITY Full Stack Developer NanoDegree
 
 
 
-## System setup and how to view this project
+## System setup 
 This project makes use of Udacity's Linux-based virtual machine (VM) configuration which includes all of the necessary software to run the application.
 1. Download [Vagrant](https://www.vagrantup.com/) and install.
 2. Download [Virtual Box](https://www.virtualbox.org/) and install. 
