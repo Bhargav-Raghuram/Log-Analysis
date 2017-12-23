@@ -20,7 +20,7 @@ num_views DESC limit 3 '''
 # Question 2: WHO ARE THE MOST POPULAR ARTICLE AUTHORS OF ALL TIME  ?
 query2 = ''' select authors.name,sum(article_view.num_views) as views from
 article_view,authors where authors.id = article_view.author
-group by authors.name order by views desc '''
+group by authors.name order by views DESC '''
 
 # Question 3: ON WHICH DAYS DID MORE THAN 1% OF REQUESTS LEAD TO ERRORS?
 query3 = "select * from error_view where \"Percentage Error\" > 1"
