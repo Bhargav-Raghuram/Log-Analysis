@@ -33,7 +33,7 @@ ORDER BY num_views DESC;
 ````
 #### error_view
 ````sql
-CREATE view error_view AS 
+CREATE VIEW error_view AS 
 SELECT date(time),round(100.0*sum(case log.status when '200 OK' 
 then 0 else 1 end)/count(log.status),2) as "Percentage Error" from log group by date(time) 
 ORDER BY "Percentage Error" DESC;
